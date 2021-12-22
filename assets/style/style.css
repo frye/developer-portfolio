@@ -1,0 +1,9 @@
+:root {
+    --theme-bg: rgb(11, 1, 54);
+    --theme-font-color: rgb(211, 246, 255);
+}
+
+body {
+    background-color: var(--theme-bg);
+    color: var(--theme-font-color);
+}
