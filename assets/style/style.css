@@ -110,7 +110,7 @@ p {
 .portfolioitems {
     margin: 20px;
     padding: 10px;
-    width: 95%;
+    width: 98%;
     display: flex;
     flex-wrap: wrap;
 }
@@ -119,11 +119,12 @@ p {
 .portfolioitem {
     box-sizing: border-box;
     width: 50%;
-    border: solid white 1px;
-    border-radius: 20px;
-    padding: 10px;
 }
 
+.projectcard {
+    margin:5px;
+    border: solid white 1px;
+}
 /* Special controls for the most recent work in the portfolio */
 .portfolioitem:first-child {
     width: 100%;
@@ -195,6 +196,10 @@ p {
     .heading {
         margin-right: 10px;
         min-width: 75px;
+    }
+
+    .portfolioitems {
+        justify-content: center;
     }
 
     .portfolioitem {
