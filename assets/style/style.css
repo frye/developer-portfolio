@@ -1,6 +1,6 @@
 :root {
-    --theme-bg: rgb(9, 0, 48);
-    --theme-font-color: rgb(211, 246, 255);
+    --theme-bg: #090030;
+    --theme-font-color: #d3f6ff;
     --theme-font-family: 'Noto Sans', sans-serif; 
 }
 
@@ -62,7 +62,9 @@ header ul li {
 }
 
 .about-picture img {
-    border-radius: 50%;
+    border-radius: 30%;
+    width: 350px;
+    height: 350px;
 }
 
 .portfolioitems {
@@ -79,20 +81,38 @@ header ul li {
     padding: 10px;
 }
 
+.social-media {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon {
+    fill: var(--theme-font-color);
+    padding: 5px;
+}
+
 /* Special controls for the most recent work in the portfolio */
 .portfolioitem:first-child {
     width: 100%;
 }
 
+/* Style overrides when the screen starts to become too narrow. */
+@media screen and (max-width: 900px) {
+    .aboutme {
+        flex-direction: column;
+    }
+
+    .about-text {
+        order: 2;
+    }
+}
+
+/* Style overrides for small screens */
 @media screen and (max-width: 768px) {
     .portfolioitem {
         width: 100%;
     }
 
-    .aboutme {
-        flex-direction: column;
-    }
-    
     header ul {
         width: 200px;
         flex-direction: column;
