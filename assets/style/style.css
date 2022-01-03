@@ -44,3 +44,9 @@ section {
 .portfolioitem:first-child {
     width: 100%;
 }
+
+@media screen and (max-width: 768px) {
+    .portfolioitem {
+        width: 100%;
+    }
+}
