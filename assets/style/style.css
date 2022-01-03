@@ -51,16 +51,18 @@ header ul li {
     padding-bottom: 20px;
 }
 
-section {
-    border: solid white 1px;
-}
-
 .aboutme {
     display:flex; 
+    justify-content: space-around;
+    align-items: center;
 }
 
 .about-text {
     margin-left: 40px;
+}
+
+.about-picture img {
+    border-radius: 50%;
 }
 
 .portfolioitems {
