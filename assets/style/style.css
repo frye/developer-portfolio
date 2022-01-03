@@ -53,7 +53,15 @@ header ul li {
 }
 
 .aboutme {
-    display:flex; 
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.about-header {
+    display:flex;
+    flex-direction: row; 
     justify-content: space-around;
     align-items: center;
 }
@@ -67,6 +75,10 @@ header ul li {
     border-radius: 30%;
     width: 350px;
     height: 350px;
+}
+
+.about-details {
+    margin: 30px;
 }
 
 .portfolioitems {
@@ -100,7 +112,7 @@ header ul li {
 
 /* Style overrides when the screen starts to become too narrow. */
 @media screen and (max-width: 900px) {
-    .aboutme {
+    .about-header {
         flex-direction: column;
     }
 
