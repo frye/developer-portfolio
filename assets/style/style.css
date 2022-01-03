@@ -26,6 +26,16 @@ header {
     display: flex;
     justify-content: space-between;
     font-size: 2em;
+    align-items: center;
+}
+
+#logo {
+    height: 80px;
+    padding: 5px;
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 50%;
 }
 
 header ul {
@@ -37,7 +47,8 @@ header ul {
 
 header ul li {
     text-decoration: none;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 section {
@@ -74,5 +85,8 @@ section {
 @media screen and (max-width: 768px) {
     .portfolioitem {
         width: 100%;
+    }
+    .aboutme {
+        flex-direction: column;
     }
 }
