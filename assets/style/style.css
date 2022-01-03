@@ -120,6 +120,10 @@ p {
         flex-direction: column;
     }
 
+    .hero-text {
+        font-size: 0.9em;
+    }
+
     .spacer-line {
         height: 3px;
         width: 300px;
@@ -143,5 +147,9 @@ p {
     .nav ul li {
         padding-top: 3px;
         padding-bottom: 3px;
+    }
+
+    .hero-text {
+        font-size: 0.7em;
     }
 }
