@@ -90,12 +90,13 @@ p {
 .heading {
     min-width: 200px;
     justify-content: right;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-bottom: 20px;
     margin-left: 20px;
     padding-right: 20px;
     text-align: right;
     border-right: solid var(--theme-font-color) 3px;
+    font-weight: bold;
 }
 
 .about-text {
@@ -126,6 +127,15 @@ p {
 /* Special controls for the most recent work in the portfolio */
 .portfolioitem:first-child {
     width: 100%;
+}
+
+.contact {
+    display: flex;
+}
+
+.contact-text {
+    margin: 20px;
+    padding: 10px;
 }
 
 .social-media {
@@ -170,8 +180,16 @@ p {
         font-size: 0.7em;
     }
 
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+
     .heading {
-        min-width: 80px;
+        min-width: 75px;
     }
 
     .portfolioitem {
@@ -191,5 +209,21 @@ p {
     .hero-text {
         margin-left: 20px;
         margin-right: 20px;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    .hero {
+        height: 180vh;
+    }
+    
+    .hero-line {
+        order: 2;
+        margin-top: none;
+        margin-bottom: 20px;
+    }
+
+    .hero-picture {
+        order: 3;
     }
 }
