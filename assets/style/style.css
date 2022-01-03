@@ -70,7 +70,7 @@ p {
     margin-left: 40px;
 }
 
-.vertical-line {
+.spacer-line {
     margin-left: 20px;
     height: 300px;
     border-right: solid var(--theme-font-color) 3px;
@@ -120,12 +120,12 @@ p {
         flex-direction: column;
     }
 
-    .about-text {
-        order: 2;
-    }
-
-    .vertical-line {
-        display: none;
+    .spacer-line {
+        height: 3px;
+        width: 300px;
+        margin-top: 20px;
+        border-right: none;
+        border-top: solid var(--theme-font-color) 3px;
     }
 }
 
