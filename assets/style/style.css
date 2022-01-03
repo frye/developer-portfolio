@@ -27,6 +27,7 @@ header {
     justify-content: space-between;
     font-size: 2em;
     align-items: center;
+    height: 150px;
 }
 
 #logo {
@@ -59,6 +60,7 @@ header ul li {
 
 .about-text {
     margin-left: 40px;
+    order: 2;
 }
 
 .about-picture img {
