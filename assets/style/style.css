@@ -1,9 +1,42 @@
 :root {
-    --theme-bg: rgb(11, 1, 54);
+    --theme-bg: rgb(9, 0, 48);
     --theme-font-color: rgb(211, 246, 255);
+}
+
+header {
+    font-size: 3em;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+header ul li {
+    list-style-type: none;
 }
 
 body {
     background-color: var(--theme-bg);
     color: var(--theme-font-color);
+}
+
+section {
+    height: 500px;
+    border: solid white 1px;
+}
+
+.portfolioitems {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Styling for the portfolio items */
+.portfolioitem {
+    width: 50%;
+}
+
+/* Special controls for the most recent work in the portfolio */
+.portfolioitem:first-child {
+    width: 100%;
 }
