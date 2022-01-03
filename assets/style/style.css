@@ -33,7 +33,11 @@ section {
 
 /* Styling for the portfolio items */
 .portfolioitem {
+    box-sizing: border-box;
     width: 50%;
+    border: solid white 1px;
+    border-radius: 20px;
+    padding: 10px;
 }
 
 /* Special controls for the most recent work in the portfolio */
