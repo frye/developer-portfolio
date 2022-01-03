@@ -22,14 +22,6 @@ p {
     font-size: 2em;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    font-size: 2em;
-    align-items: center;
-    height: 150px;
-}
-
 #logo {
     height: 80px;
     padding: 5px;
@@ -39,46 +31,55 @@ header {
     border-radius: 50%;
 }
 
-header ul {
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    font-size: 2em;
+}
+
+.nav ul {
     display: flex;
     width: 500px;
     justify-content: space-around;
     list-style-type: none;
 }
 
-header ul li {
+.nav ul li {
     text-decoration: none;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-.aboutme {
+.hero-area {
     display: flex;
-    height: 100vh;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-.about-header {
-    display:flex;
-    flex-direction: row; 
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
+    height: 100%;
 }
 
-.about-text {
+.hero-text {
     margin-left: 40px;
-    order: 2;
 }
 
-.about-picture img {
+.vertical-line {
+    margin-left: 20px;
+    height: 300px;
+    border-right: solid var(--theme-font-color) 3px;
+}
+
+.hero-picture img {
     border-radius: 30%;
     width: 350px;
     height: 350px;
-}
-
-.about-details {
-    margin: 30px;
 }
 
 .portfolioitems {
@@ -100,6 +101,7 @@ header ul li {
     justify-content: center;
 }
 
+/* Color and sizing of the social media icons */
 .social-icon {
     fill: var(--theme-font-color);
     padding: 5px;
@@ -114,12 +116,16 @@ header ul li {
 
 /* Style overrides when the screen starts to become too narrow. */
 @media screen and (max-width: 900px) {
-    .about-header {
+    .hero-area {
         flex-direction: column;
     }
 
     .about-text {
         order: 2;
+    }
+
+    .vertical-line {
+        display: none;
     }
 }
 
@@ -129,12 +135,12 @@ header ul li {
         width: 100%;
     }
 
-    header ul {
+    .nav ul {
         width: 200px;
         flex-direction: column;
     }
 
-    header ul li {
+    .nav ul li {
         padding-top: 3px;
         padding-bottom: 3px;
     }
