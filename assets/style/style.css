@@ -82,7 +82,7 @@ p {
     height: 350px;
 }
 
-.aboutme {
+.section {
     display: flex;
 
 }
@@ -188,12 +188,17 @@ p {
         font-size: 2.5em;
     }
 
+    .section {
+        flex-direction: column;
+    }
+
     .heading {
+        margin-right: 10px;
         min-width: 75px;
     }
 
     .portfolioitem {
-        width: 100%;
+        width: 90%;
     }
 
     .nav ul {
