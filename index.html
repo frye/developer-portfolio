@@ -50,9 +50,6 @@
         <div class="heading">
             <p>About</p>
         </div>
-        <!-- <div class="spacer-line">
-            Just a placeholder for vertical line
-        </div> -->
         <div class="about-text">
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni rem id autem harum hic non ex animi
                 officia quaerat quas a totam eos, ipsam est dolorum pariatur atque soluta accusamus.</p>
@@ -126,16 +123,25 @@
         <div class="heading">
             <p>Contact</p>
         </div>
-        <div class="contact-text">
-            <p>Here you will find my contact information (eventually). And you can always connect with me using the
-                social medial links at the bottom of the page.</p>
-            <br>
-            <p>Email: maybe</p>
-            <p>Phone: probably</p>
+        <div class="form-area">
+            <p> Contact me using the form below.</p>
+            <p>( Submit not implemented yet )</p>
+            <div class="contact-form">
+                <form action="" method="POST">
+                    <div class="form-header">
+                        <input name="name" class="form-element" placeholder="Full name">
+                        <div class="form-spacer"></div>
+                        <input name="email" class="form-element" placeholder="Email">
+                    </div>
+                    <textarea name="message" placeholder="Your message" rows="10" required></textarea>
+                    <button name="submitButton" type="submit">Submit form</button>
+                </form>
+            </div>
         </div>
     </section>
     <footer>
         <section class="social-media">
+            <!-- This section has SVG icons for GitHub and LinkedIn that act as links to my profile in these services. -->
             <div>
                 <a href="https://github.com/frye">
                     <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -158,6 +164,7 @@
             </div>
         </section>
     </footer>
+    <script src="assets/script/script.js"></script>
 </body>
 
 </html>

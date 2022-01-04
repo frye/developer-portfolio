@@ -1,3 +1,4 @@
+/* Setting up theme colors and font. */
 :root {
     --theme-bg: #090030;
     --theme-highlight-color: #44c5e6;
@@ -16,11 +17,11 @@ h1 {
 }
 
 h2 {
-    font-size: 3.2em;
+    font-size: 3em;
 }
 
 p {
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 a {
@@ -97,6 +98,8 @@ a:hover {
 
 }
 
+/* Set up the section headers to align text to right and 
+have a right border for highlight. */
 .heading {
     min-width: 200px;
     justify-content: right;
@@ -143,6 +146,9 @@ a:hover {
     border-radius: 10px;
 }
 
+/* Placing the header to the top left corner of the card. 
+With a small margin between the header and the card border 
+when highlighted. */
 .card-header {
     width: 300px;
     text-align: center;
@@ -170,13 +176,61 @@ a:hover {
     width: 100%;
 }
 
-.contact {
+.form-area {
+    box-sizing: border-box;
     display: flex;
-}
-
-.contact-text {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
     margin: 20px;
     padding: 10px;
+}
+
+.contact-form {
+    width: 50%;
+    margin: 20px;
+    padding: 10px;
+}
+
+.contact-form .form-header {
+    display: flex;
+}
+.contact-form .form-element {
+    width: 50%;
+    border: solid var(--theme-highlight-color) 2px;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: var(--theme-font-color);
+    color: var(--theme-bg);
+}
+
+.contact-form .form-spacer {
+    width: 5px;
+}
+
+.contact-form textarea {
+    border: solid var(--theme-highlight-color) 2px;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    resize: none;
+    margin-top: 5px;
+    margin-right: 5px;
+    background-color: var(--theme-font-color);
+    color: var(--theme-bg);
+}
+
+.contact-form button {
+    width: 100%;
+    border: solid var(--theme-highlight-color) 2px;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: var(--theme-font-color);
+    color: var(--theme-bg);
+}
+
+.contact-form button:hover {
+    background-color: var(--theme-highlight-color);
 }
 
 .social-media {
@@ -222,6 +276,14 @@ a:hover {
         width: 220px;
         font-size: 1.8em;
     }
+
+    .contact-form .form-header {
+        flex-direction: column;
+    }
+    .contact-form .form-element {
+        width: 100%;
+        margin-top: 5px;
+    }
 }
 
 /* Style overrides for small screens */
@@ -238,6 +300,9 @@ a:hover {
         font-size: 2.5em;
     }
 
+    /* Although I switch the direction to column here I have chosen not to
+    overide the heading placement. At least for now. I kind of like them to
+    be on the right edge of the screen with the border highlight. */
     .section {
         flex-direction: column;
     }
@@ -272,6 +337,10 @@ a:hover {
     .hero-text {
         margin-left: 20px;
         margin-right: 20px;
+    }
+
+    .contact-form {
+        width: 80%;
     }
 }
 
