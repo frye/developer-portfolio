@@ -1,5 +1,6 @@
 :root {
     --theme-bg: #090030;
+    --theme-highlight-color: #44c5e6;
     --theme-font-color: #d3f6ff;
     --theme-font-family: 'Noto Sans', sans-serif; 
 }
@@ -63,6 +64,10 @@ a {
     padding-bottom: 20px;
 }
 
+a:hover {
+    color: var(--theme-highlight-color);
+}
+
 .hero-area {
     display: flex;
     flex-direction: row;
@@ -114,7 +119,6 @@ a {
 }
 .portfolioitems {
     margin: 20px;
-    padding: 10px;
     width: 98%;
     display: flex;
     flex-wrap: wrap;
@@ -128,10 +132,34 @@ a {
 
 .projectcard {
     margin:5px;
-    padding: 5px;
-    border: solid white 1px;
+    border: solid var(--theme-bg) 5px;
+}
+
+.projectcard:hover {
+    border: solid var(--theme-highlight-color) 5px;
     border-radius: 10px;
 }
+
+.card-header {
+    width: 300px;
+    text-align: center;
+    background-color: var(--theme-font-color);
+    color: var(--theme-bg);
+    font-size: 2em;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: -53px;
+    border: solid var(--theme-highlight-color) 5px;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px var(--theme-bg), 0 0 8px var(--theme-font-color);
+}
+
+.card-image {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+}
+
 /* Special controls for the most recent work in the portfolio */
 .portfolioitem:first-child {
     width: 100%;
@@ -157,6 +185,10 @@ a {
     padding: 5px;
     width: 40px;
     height: 40px;
+}
+
+.social-icon:hover {
+    fill: var(--theme-highlight-color);
 }
 
 /* Style overrides when the screen starts to become too narrow. */
