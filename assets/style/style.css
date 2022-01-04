@@ -131,8 +131,11 @@ a:hover {
 }
 
 .projectcard {
+    box-sizing: border-box;
     margin:5px;
+    padding: 5px;
     border: solid var(--theme-bg) 5px;
+    min-height: 100%;
 }
 
 .projectcard:hover {
@@ -155,9 +158,11 @@ a:hover {
 }
 
 .card-image {
-    max-width: 100%;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 10px;
     max-height: 100%;
-    border-radius: 5px;
+    max-width: 100%;
 }
 
 /* Special controls for the most recent work in the portfolio */
@@ -192,7 +197,7 @@ a:hover {
 }
 
 /* Style overrides when the screen starts to become too narrow. */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
     body {
         font-size: 0.9em;
     }
@@ -211,6 +216,11 @@ a:hover {
 
     .heading {
         min-width: 150px;
+    }
+
+    .card-header {
+        width: 220px;
+        font-size: 1.8em;
     }
 }
 
@@ -242,7 +252,11 @@ a:hover {
     }
 
     .portfolioitem {
-        width: 90%;
+        width: 100%;
+    }
+
+    .card-image {
+        margin: 10px;
     }
 
     .nav ul {
