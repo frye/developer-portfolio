@@ -148,12 +148,13 @@ have a right border for highlight. */
 /* Placing the header to the top left corner of the card. 
 With a small margin between the header and the card border 
 when highlighted. */
-.card-header {
-    width: 300px;
+.card-header {  
+    width: 40%;
+    min-width: 280px; 
     text-align: center;
     background-color: var(--theme-font-color);
     color: var(--theme-bg);
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: bold;
     position: relative;
     margin-bottom: -53px;
@@ -173,6 +174,12 @@ when highlighted. */
 /* Special controls for the most recent work in the portfolio */
 .portfolioitem:first-child {
     width: 100%;
+}
+
+.portfolioitem:first-child .card-header {
+    width: 60%;
+    min-width: 220px;
+    font-size: 2em;
 }
 
 .form-area {
@@ -273,7 +280,7 @@ when highlighted. */
     }
 
     .card-header {
-        width: 220px;
+        min-width: 230px;
         font-size: 1.8em;
     }
 
