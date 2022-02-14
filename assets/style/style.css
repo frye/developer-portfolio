@@ -257,6 +257,14 @@ when highlighted. */
     fill: var(--theme-highlight-color);
 }
 
+.cvlink .dllink {
+	display: none;
+}
+
+.cvlink:hover .dllink{
+	display: block;
+}
+
 /* Style overrides when the screen starts to become too narrow. */
 @media screen and (max-width: 950px) {
     body {
