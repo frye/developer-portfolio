@@ -31,7 +31,7 @@ a {
 }
 
 #logo {
-    height: 80px;
+    height: 100px;
     padding: 5px;
     margin-left: 20px;
     /* margin-top: 5px;
@@ -129,6 +129,8 @@ have a right border for highlight. */
 /* Styling for the portfolio items */
 .portfolioitem {
     box-sizing: border-box;
+	 padding-top: 5px;
+	 padding-bottom: 5px;
     width: 50%;
 }
 
@@ -136,7 +138,8 @@ have a right border for highlight. */
     box-sizing: border-box;
     margin:5px;
     padding: 5px;
-    border: solid var(--theme-bg) 5px;
+    border: solid var(--theme-font-color) 5px;
+	 border-radius: 10px;
     min-height: 100%;
 }
 
@@ -149,7 +152,7 @@ have a right border for highlight. */
 With a small margin between the header and the card border 
 when highlighted. */
 .card-header {  
-    width: 40%;
+    width: 100%;
     min-width: 280px; 
     text-align: center;
     background-color: var(--theme-font-color);
@@ -157,7 +160,6 @@ when highlighted. */
     font-size: 1.8em;
     font-weight: bold;
     position: relative;
-    margin-bottom: -53px;
     border: solid var(--theme-highlight-color) 5px;
     border-radius: 10px;
     box-shadow: inset 0px 0px 5px var(--theme-bg), 0 0 8px var(--theme-font-color);
@@ -167,8 +169,12 @@ when highlighted. */
     box-sizing: border-box;
     border-radius: 20px;
     padding: 10px;
-    height: 100%;
-    width: 100%;
+    height: 50%;
+	 width: 100%;
+}
+
+.card-text {
+	font-size: 0.6em;
 }
 
 .form-area {
@@ -283,7 +289,7 @@ when highlighted. */
 }
 
 /* Style overrides for small screens */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 820px) {
     body {
         font-size: 0.7em;
     }
