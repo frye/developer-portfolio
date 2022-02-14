@@ -171,17 +171,6 @@ when highlighted. */
     width: 100%;
 }
 
-/* Special controls for the most recent work in the portfolio */
-.portfolioitem:first-child {
-    width: 100%;
-}
-
-.portfolioitem:first-child .card-header {
-    width: 60%;
-    min-width: 220px;
-    font-size: 2em;
-}
-
 .form-area {
     box-sizing: border-box;
     display: flex;
@@ -255,14 +244,6 @@ when highlighted. */
 
 .social-icon:hover {
     fill: var(--theme-highlight-color);
-}
-
-.cvlink .dllink {
-	display: none;
-}
-
-.cvlink:hover .dllink{
-	display: block;
 }
 
 /* Style overrides when the screen starts to become too narrow. */
